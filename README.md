@@ -1,7 +1,7 @@
 # just-breathe
 🧘 Just breathe is an in-progress project focused on creating a minimalist web app for use of mindfulness and meditation.
 
-Inspired by a book by (https://en.wikipedia.org/wiki/Pema_Chödrön)[Pema Chödrön].
+Inspired by a book by [Pema Chödrön](https://en.wikipedia.org/wiki/Pema_Chödrön) .
 
 Current stage:
 - [x] Research
