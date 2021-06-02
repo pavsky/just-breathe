@@ -18,7 +18,7 @@ Intuitive; Clear; Minimalist. These are keywords this project has to stand by. T
 
 ## Brainstorming, Conclusions 
 
-There are no accounts, no and no stats. There's nothing to achieve here apart from the act of mindfulness itself. This is to remove instant gratification, and to foucs on the task at hand. User is presented with a timer, ambient noise of choice, and a start button. While not the most lucrative approach, this excercise is meant to create a space for people to remove themselves from distractions and mental triggers that are often implemented within apps for profit.
+There are no accounts, no and no stats. There's nothing to achieve here apart from the act of mindfulness itself. This is to remove instant gratification, and to foucs on the task at hand. User is presented with a theme of choice (dark or light), timer, ambient noise of choice, and a start button. While not the most lucrative approach, this excercise is meant to create a space for people to remove themselves from distractions and mental triggers that are often implemented within apps for profit.
 
 ## Prototyping
 
