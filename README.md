@@ -13,9 +13,10 @@ Current stage:
 
 ## Definition 
 
-Intuitive; Clear; Minimalist. These are keywords this project has to stand by. The interface has to be incredibly easy and clear in terms of signifiers, and choices the user is presented with have to be concise enough to minimize the chance for frustration. 
+Intuitive; Clear; Minimalist. These are keywords this project has to stand by. The interface has to be incredibly easy and clear in terms of signifiers, and choices the user is presented with have to be concise enough to minimize the chance for frustration.
 
-## Brainstorming, Conclusions
+
+## Brainstorming, Conclusions 
 
 There are no accounts, no and no stats. There's nothing to achieve here apart from the act of mindfulness itself. This is to remove instant gratification, and to foucs on the task at hand. User is presented with a timer, ambient noise of choice, and a start button. While not the most lucrative approach, this excercise is meant to create a space for people to remove themselves from distractions and mental triggers that are often implemented within apps for profit.
 
