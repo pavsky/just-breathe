@@ -5,7 +5,7 @@ Current stage:
 - [x] Research
 - [x] Definition
 - [x] Brainstorming, Conclusions
-- [x] Prototype
+- [x] Prototyping
 
 ## Research
 
@@ -20,6 +20,6 @@ Intuitive; Clear; Minimalist. These are keywords this project has to stand by. T
 
 There are no accounts, no and no stats. There's nothing to achieve here apart from the act of mindfulness itself. This is to remove instant gratification, and to foucs on the task at hand. User is presented with a timer, ambient noise of choice, and a start button. While not the most lucrative approach, this excercise is meant to create a space for people to remove themselves from distractions and mental triggers that are often implemented within apps for profit.
 
-## Prototype (in Figma)
+## Prototyping
 
 [Figma file - work in progress](https://www.figma.com/file/96uvXp9ipCXgezTFGl3iYW/Untitled?node-id=0%3A1)
