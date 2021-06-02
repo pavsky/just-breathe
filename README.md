@@ -20,6 +20,8 @@ Intuitive; Clear; Minimalist. These are keywords this project has to stand by. T
 
 There are no accounts, no and no stats. There's nothing to achieve here apart from the act of mindfulness itself. This is to remove instant gratification, and to foucs on the task at hand. User is presented with a theme of choice (dark or light), timer, ambient noise of choice, and a start button. While not the most lucrative approach, this excercise is meant to create a space for people to remove themselves from distractions and mental triggers that are often implemented within apps for profit.
 
+Additionaly, there's a 'how to' page for users who are not sure where to start, or who are perhaps new to meditation. This is a friendly place with a bunch of resources to learn about the art of mindfulness.
+
 ## Prototyping
 
 [Figma file - work in progress](https://www.figma.com/file/96uvXp9ipCXgezTFGl3iYW/Untitled?node-id=0%3A1)
