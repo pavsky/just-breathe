@@ -30,3 +30,12 @@ Additionaly, there's a 'how to' page for users who are not sure where to start, 
 ![Prototype for Just Breathe](img/just-breathe-prototype.png)
 
 [Figma file - work in progress](https://www.figma.com/file/96uvXp9ipCXgezTFGl3iYW/Untitled?node-id=0%3A1)
+
+## Resources
+
+Fonts used:
+[Abril Fatface](https://fonts.google.com/specimen/Abril+Fatface?query=abril)
+[Roboto](https://fonts.google.com/specimen/Roboto?query=Roboto)
+
+All icons provided by [Iconify](https://www.figma.com/community/plugin/735098390272716381).
+
