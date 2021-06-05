@@ -10,6 +10,7 @@ Current stage:
 - [x] Definition
 - [x] Brainstorming, Conclusions
 - [x] Prototyping
+- [ ] Finish Demo
 
 ## Research
 
