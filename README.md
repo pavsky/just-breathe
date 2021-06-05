@@ -34,8 +34,14 @@ Additionaly, there's a 'how to' page for users who are not sure where to start, 
 ## Resources
 
 Fonts used:
-[Abril Fatface](https://fonts.google.com/specimen/Abril+Fatface?query=abril), 
+[Abril Fatface](https://fonts.google.com/specimen/Abril+Fatface?query=abril),
 [Roboto](https://fonts.google.com/specimen/Roboto?query=Roboto)
 
 All icons provided by [Iconify](https://www.figma.com/community/plugin/735098390272716381).
 
+Ambient sound effects:
+[Wind](https://freesound.org/people/michieldb.nl/sounds/217457/),
+[Rain](https://freesound.org/people/babuababua/sounds/344430/)
+
+Web Audio library:
+[Pizzicato.js](https://alemangui.github.io/pizzicato/)
