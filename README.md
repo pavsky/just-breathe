@@ -33,6 +33,8 @@ Additionaly, there's a 'how to' page for users who are not sure where to start, 
 
 ## Demo
 
+[Current version](https://just-breathe-demo.netlify.app)
+
 Left to do:
 
 - [x] Changing Screens
@@ -40,6 +42,7 @@ Left to do:
 - [ ] Smoother Transitions
 - [ ] Buttons Placement fix
 - [ ] Ambient sound implementation
+- [ ] 'Not sure what to do?' screen
 
 ## Resources
 
