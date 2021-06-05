@@ -31,6 +31,16 @@ Additionaly, there's a 'how to' page for users who are not sure where to start, 
 
 [Figma file - work in progress](https://www.figma.com/file/96uvXp9ipCXgezTFGl3iYW/Untitled?node-id=0%3A1)
 
+## Demo
+
+Left to do:
+
+- [x] Changing Screens
+- [x] Timer
+- [ ] Smoother Transitions
+- [ ] Buttons Placement fix
+- [ ] Ambient sound implementation
+
 ## Resources
 
 Fonts used:
