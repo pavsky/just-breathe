@@ -43,6 +43,7 @@ Left to do:
 - [ ] Buttons Placement fix
 - [ ] Ambient sound implementation
 - [ ] 'Not sure what to do?' screen
+- [ ] Responsive fixes
 
 ## Resources
 
