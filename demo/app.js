@@ -55,7 +55,6 @@ $("#settings-theme-light").click(() => {
     .css("background", "white")
     .css("color", "black")
     .css("border", "2px solid black");
-  chooseSound();
 });
 
 $("#settings-theme-dark").click(() => {
