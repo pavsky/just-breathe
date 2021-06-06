@@ -362,15 +362,29 @@ $("#pause").click(() => {
 
 const practice = () => {
   if (sound == "rain") {
-    ambient = new Pizzicato.Sound("sfx/rain.mp3", function () {
-      // Sound loaded!
-      ambient.play();
-    });
+    ambient = new Pizzicato.Sound(
+      {
+        source: "file",
+        options: { path: "sfx/rain.mp3" },
+        loop: true,
+      },
+      function () {
+        // Sound loaded!
+        ambient.play();
+      }
+    );
   } else if (sound == "wind") {
-    ambient = new Pizzicato.Sound("sfx/wind.mp3", function () {
-      // Sound loaded!
-      ambient.play();
-    });
+    ambient = new Pizzicato.Sound(
+      {
+        source: "file",
+        options: { path: "sfx/wind.mp3" },
+        loop: true,
+      },
+      function () {
+        // Sound loaded!
+        ambient.play();
+      }
+    );
   }
 
   setTimeout(() => {
@@ -411,6 +425,8 @@ const practice = () => {
     $("#well-done").delay(500).fadeIn();
     setTimeout(() => {
       changeScreen("#practice", "#home");
+      $("#well-done").hide();
+      $("#pause").css("display", "none");
     }, 2000);
   };
 };
