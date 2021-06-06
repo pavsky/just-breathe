@@ -9,6 +9,10 @@ let theme = "light";
 let sound = "no-sound";
 let paused = false;
 let minutes;
+let ambient;
+
+let wind = new Pz.Sound("sfx/wind.mp3");
+let rain = new Pz.Sound("sfx/rain.mp3");
 
 // Changing screens
 const changeScreen = (from, to) => {
@@ -19,6 +23,9 @@ const changeScreen = (from, to) => {
 // Button behavior
 $("#lets-go").click(() => {
   changeScreen("#home", "#settings");
+});
+$("#not-sure").click(() => {
+  window.open("https://www.nytimes.com/guides/well/how-to-meditate", "_blank");
 });
 
 // Settings
@@ -74,14 +81,9 @@ $("#settings-theme-dark").click(() => {
     .css("background", "black")
     .css("color", "white")
     .css("border", "2px solid white");
-  chooseSound();
 });
 
 // Ambient sound change
-const chooseSound = () => {
-  $("#settings-theme").css("pointer-events", "none").css("opacity", "0.2");
-  $("#settings-ambient").css("pointer-events", "auto").css("opacity", "1");
-};
 
 $("#settings-ambient-rain").click(() => {
   sound = "rain";
@@ -90,13 +92,30 @@ $("#settings-ambient-rain").click(() => {
     $("#settings-ambient-rain")
       .css("background", "black")
       .css("border", "2px solid black");
+
+    $("#settings-ambient-wind svg *").css("fill", "black");
+    $("#settings-ambient-wind")
+      .css("background", "white")
+      .css("border", "2px solid black");
+    $("#settings-ambient-no-sound svg *").css("fill", "black");
+    $("#settings-ambient-no-sound")
+      .css("background", "white")
+      .css("border", "2px solid black");
   } else {
     $("#settings-ambient-rain svg *").css("fill", "black");
     $("#settings-ambient-rain")
       .css("background", "white")
       .css("border", "2px solid white");
+
+    $("#settings-ambient-wind svg *").css("fill", "white");
+    $("#settings-ambient-wind")
+      .css("background", "black")
+      .css("border", "2px solid white");
+    $("#settings-ambient-no-sound svg *").css("fill", "white");
+    $("#settings-ambient-no-sound")
+      .css("background", "black")
+      .css("border", "2px solid white");
   }
-  chooseTimer();
 });
 $("#settings-ambient-wind").click(() => {
   sound = "wind";
@@ -105,13 +124,28 @@ $("#settings-ambient-wind").click(() => {
     $("#settings-ambient-wind")
       .css("background", "black")
       .css("border", "2px solid black");
+    $("#settings-ambient-rain svg *").css("fill", "black");
+    $("#settings-ambient-rain")
+      .css("background", "white")
+      .css("border", "2px solid black");
+    $("#settings-ambient-no-sound svg *").css("fill", "black");
+    $("#settings-ambient-no-sound")
+      .css("background", "white")
+      .css("border", "2px solid black");
   } else {
     $("#settings-ambient-wind svg *").css("fill", "black");
     $("#settings-ambient-wind")
       .css("background", "white")
       .css("border", "2px solid white");
+    $("#settings-ambient-rain svg *").css("fill", "white");
+    $("#settings-ambient-rain")
+      .css("background", "black")
+      .css("border", "2px solid white");
+    $("#settings-ambient-no-sound svg *").css("fill", "white");
+    $("#settings-ambient-no-sound")
+      .css("background", "black")
+      .css("border", "2px solid white");
   }
-  chooseTimer();
 });
 $("#settings-ambient-no-sound").click(() => {
   sound = "no sound";
@@ -120,20 +154,31 @@ $("#settings-ambient-no-sound").click(() => {
     $("#settings-ambient-no-sound")
       .css("background", "black")
       .css("border", "2px solid black");
+    $("#settings-ambient-rain svg *").css("fill", "black");
+    $("#settings-ambient-rain")
+      .css("background", "white")
+      .css("border", "2px solid black");
+    $("#settings-ambient-wind svg *").css("fill", "black");
+    $("#settings-ambient-wind")
+      .css("background", "white")
+      .css("border", "2px solid black");
   } else {
     $("#settings-ambient-no-sound svg *").css("fill", "black");
     $("#settings-ambient-no-sound")
       .css("background", "white")
       .css("border", "2px solid white");
+    $("#settings-ambient-wind svg *").css("fill", "white");
+    $("#settings-ambient-wind")
+      .css("background", "black")
+      .css("border", "2px solid white");
+    $("#settings-ambient-rain svg *").css("fill", "white");
+    $("#settings-ambient-rain")
+      .css("background", "black")
+      .css("border", "2px solid white");
   }
-  chooseTimer();
 });
 
 // Timer
-const chooseTimer = () => {
-  $("#settings-ambient").css("pointer-events", "none").css("opacity", "0.2");
-  $("#settings-timer").css("pointer-events", "auto").css("opacity", "1");
-};
 
 $("#settings-timer-1").click(() => {
   timer = 1;
@@ -142,11 +187,35 @@ $("#settings-timer-1").click(() => {
       .css("background", "black")
       .css("border", "2px solid black")
       .css("color", "white");
+    $("#settings-timer-3")
+      .css("background", "white")
+      .css("border", "2px solid black")
+      .css("color", "black");
+    $("#settings-timer-5")
+      .css("background", "white")
+      .css("border", "2px solid black")
+      .css("color", "black");
+    $("#settings-timer-10")
+      .css("background", "white")
+      .css("border", "2px solid black")
+      .css("color", "black");
   } else {
     $("#settings-timer-1")
       .css("background", "white")
       .css("border", "2px solid white")
       .css("color", "black");
+    $("#settings-timer-3")
+      .css("background", "black")
+      .css("border", "2px solid white")
+      .css("color", "white");
+    $("#settings-timer-5")
+      .css("background", "black")
+      .css("border", "2px solid white")
+      .css("color", "white");
+    $("#settings-timer-10")
+      .css("background", "black")
+      .css("border", "2px solid white")
+      .css("color", "white");
   }
   readyToStart();
 });
@@ -158,11 +227,35 @@ $("#settings-timer-3").click(() => {
       .css("background", "black")
       .css("border", "2px solid black")
       .css("color", "white");
+    $("#settings-timer-1")
+      .css("background", "white")
+      .css("border", "2px solid black")
+      .css("color", "black");
+    $("#settings-timer-5")
+      .css("background", "white")
+      .css("border", "2px solid black")
+      .css("color", "black");
+    $("#settings-timer-10")
+      .css("background", "white")
+      .css("border", "2px solid black")
+      .css("color", "black");
   } else {
     $("#settings-timer-3")
       .css("background", "white")
       .css("border", "2px solid white")
       .css("color", "black");
+    $("#settings-timer-1")
+      .css("background", "black")
+      .css("border", "2px solid white")
+      .css("color", "white");
+    $("#settings-timer-5")
+      .css("background", "black")
+      .css("border", "2px solid white")
+      .css("color", "white");
+    $("#settings-timer-10")
+      .css("background", "black")
+      .css("border", "2px solid white")
+      .css("color", "white");
   }
   readyToStart();
 });
@@ -174,11 +267,35 @@ $("#settings-timer-5").click(() => {
       .css("background", "black")
       .css("border", "2px solid black")
       .css("color", "white");
+    $("#settings-timer-3")
+      .css("background", "white")
+      .css("border", "2px solid black")
+      .css("color", "black");
+    $("#settings-timer-1")
+      .css("background", "white")
+      .css("border", "2px solid black")
+      .css("color", "black");
+    $("#settings-timer-10")
+      .css("background", "white")
+      .css("border", "2px solid black")
+      .css("color", "black");
   } else {
     $("#settings-timer-5")
       .css("background", "white")
       .css("border", "2px solid white")
       .css("color", "black");
+    $("#settings-timer-3")
+      .css("background", "black")
+      .css("border", "2px solid white")
+      .css("color", "white");
+    $("#settings-timer-1")
+      .css("background", "black")
+      .css("border", "2px solid white")
+      .css("color", "white");
+    $("#settings-timer-10")
+      .css("background", "black")
+      .css("border", "2px solid white")
+      .css("color", "white");
   }
   readyToStart();
 });
@@ -189,11 +306,35 @@ $("#settings-timer-10").click(() => {
       .css("background", "black")
       .css("border", "2px solid black")
       .css("color", "white");
+    $("#settings-timer-3")
+      .css("background", "white")
+      .css("border", "2px solid black")
+      .css("color", "black");
+    $("#settings-timer-5")
+      .css("background", "white")
+      .css("border", "2px solid black")
+      .css("color", "black");
+    $("#settings-timer-1")
+      .css("background", "white")
+      .css("border", "2px solid black")
+      .css("color", "black");
   } else {
     $("#settings-timer-10")
       .css("background", "white")
       .css("border", "2px solid white")
       .css("color", "black");
+    $("#settings-timer-3")
+      .css("background", "black")
+      .css("border", "2px solid white")
+      .css("color", "white");
+    $("#settings-timer-5")
+      .css("background", "black")
+      .css("border", "2px solid white")
+      .css("color", "white");
+    $("#settings-timer-1")
+      .css("background", "black")
+      .css("border", "2px solid white")
+      .css("color", "white");
   }
   readyToStart();
 });
@@ -201,7 +342,6 @@ $("#settings-timer-10").click(() => {
 // Ready to start
 
 const readyToStart = () => {
-  $("#settings-timer").css("pointer-events", "none").css("opacity", "0.2");
   $("#settings p").css("pointer-events", "auto").css("opacity", "1");
   $("#start").css("pointer-events", "auto").css("opacity", "1");
 };
@@ -222,8 +362,21 @@ $("#pause").click(() => {
 });
 
 const practice = () => {
+  if (sound == "rain") {
+    ambient = new Pizzicato.Sound("sfx/rain.mp3", function () {
+      // Sound loaded!
+      ambient.play();
+    });
+  } else if (sound == "wind") {
+    ambient = new Pizzicato.Sound("sfx/wind.mp3", function () {
+      // Sound loaded!
+      ambient.play();
+    });
+  }
+
   setTimeout(() => {
     $("#timer").fadeIn();
+    $("#pause").fadeIn();
   }, 1000);
   minutes = timer - 1;
   seconds = 59;
@@ -250,6 +403,7 @@ const practice = () => {
   }, 1000);
 
   const finishPractice = () => {
+    ambient.pause();
     timer = 0;
     seconds = 59;
     window.clearInterval();

@@ -1,6 +1,10 @@
 # just-breathe
 
+![Just Breathe Banner](img/Banner.png)
+
 🧘 Just breathe is an in-progress project focused on creating a minimalist web app for use of mindfulness and meditation.
+
+[Demo](https://just-breathe-demo.netlify.app)
 
 Inspired by a book called 'When Things Fall Apart' by [Pema Chödrön](https://en.wikipedia.org/wiki/Pema_Chödrön).
 
@@ -10,7 +14,7 @@ Current stage:
 - [x] Definition
 - [x] Brainstorming, Conclusions
 - [x] Prototyping
-- [ ] Finish Demo
+- [x] Finish Demo
 
 ## Research
 
@@ -40,11 +44,11 @@ Left to do:
 
 - [x] Changing Screens
 - [x] Timer
-- [ ] Smoother Transitions
-- [ ] Buttons Placement fix
-- [ ] Ambient sound implementation
-- [ ] 'Not sure what to do?' screen
-- [ ] Responsive fixes
+- [x] Smoother Transitions
+- [x] Buttons Placement fix
+- [x] Ambient sound implementation
+- [x] 'Not sure what to do?' screen
+- [x] Responsive fixes
 
 ## Resources
 
@@ -60,3 +64,6 @@ Ambient sound effects:
 
 Web Audio library:
 [Pizzicato.js](https://alemangui.github.io/pizzicato/)
+
+Not sure what to do section:
+[How To Meditate - New York Times](https://www.nytimes.com/guides/well/how-to-meditate)
